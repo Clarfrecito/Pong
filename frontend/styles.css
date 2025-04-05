@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+body,
+html {
+  height: 100%;
+  background-color: #000;
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+}
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-shadow: 0 0 5px white;
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px white;
+  width: 90%;
+  max-width: 400px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+button {
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: white;
+  text-shadow: 0 0 5px white;
+  box-shadow: 0 0 10px white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: white;
+  color: black;
+}
+.casita {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1000;
+  text-shadow: 0 0 4px white;
+  transition: transform 0.2s ease;
+}
+.casita:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Práctica - Pong</title>
+  </title>
+  <link rel="stylesheet" href="practica.css" />
+</head>
+<body>
+  <div class="game-container">
+    <canvas id="gameCanvas" width="800" height="500"></canvas>
+    <div id="hud">
+      <div id="reboteCounter">Rebotes: 0</div>
+      <div id="velocidadMensaje" class="hidden">¡La velocidad aumentará en el siguiente rebote!</div>
+    </div>
+    <button id="pauseBtn">⏸</button>
+    <div id="pauseMenu" class="hidden">
+      <h2>Juego en Pausa</h2>
+      <button onclick="resumeGame()">Continuar</button>
+      <button onclick="location.href='practicar.html'">Salir</button>
+    </div>
+    <div id="endMenu" class="menu hidden">
+        <h2>¡Perdiste!</h2>
+        <button onclick="restartGame()">Reiniciar</button>
+        <button onclick="saveScore()">Guardar Puntuación</button>
+        <button onclick="exitGame()">Salir</button>
+      </div>
+  </div>
+  <script type="module" src="./scripts/practica.js"></script>
+  <script src="./scripts/practica.js"></script>
+</body>
+</html>

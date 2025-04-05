@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+body,
+html {
+  height: 100%;
+  background-color: #000;
+  color: white;
+}
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+canvas {
+  border: 2px solid white;
+  border-left: none;
+  box-shadow: 0 0 20px white;
+  background-color: black;
+}
+#hud {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+#reboteCounter,
+#velocidadMensaje {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid white;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  text-shadow: 0 0 5px white;
+  box-shadow: 0 0 15px white;
+}
+#pauseBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: none;
+  text-shadow: 0 0 5px white;
+  cursor: pointer;
+}
+#pauseMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 20px white;
+  text-align: center;
+  text-shadow: 0 0 5px white;
+}
+#pauseMenu button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  background: none;
+  color: white;
+  text-shadow: 0 0 5px white;
+  box-shadow: 0 0 10px white;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+#pauseMenu button:hover {
+  background-color: white;
+  color: black;
+}
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 20px white;
+  text-align: center;
+  text-shadow: 0 0 5px white;
+}
+.menu button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  background: none;
+  color: white;
+  text-shadow: 0 0 5px white;
+  box-shadow: 0 0 10px white;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.menu button:hover {
+  background-color: white;
+  color: black;
+}
+.menu.hidden {
+  display: none;
+}
+.hidden {
+  display: none;
+}
