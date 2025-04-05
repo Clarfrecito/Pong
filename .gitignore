@@ -1,0 +1,10 @@
+# Ignorar la carpeta node_modules
+node_modules/
+
+# Ignorar otros archivos innecesarios (opcional)
+*.log
+.DS_Store
+
+# No ignores los archivos importantes
+!package.json
+!package-lock.json
